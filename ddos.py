@@ -1,6 +1,6 @@
 import socket
 
-HOST = "sidaris-turkey.ir"
+HOST = "enter target url or ip"
 PORT = 80
 HEADERS = "Content-Length: 900000\r\nContent-Type: text/plain\r\n\r\n"
 POOL_SIZE = 10
