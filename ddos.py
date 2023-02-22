@@ -1,6 +1,6 @@
 import socket
 
-HOST = "enter target url or ip"
+HOST = input("enter target url or ip")
 PORT = 80
 HEADERS = "Content-Length: 999999999\r\nContent-Type: text/plain\r\n\r\n"
 POOL_SIZE = 10
